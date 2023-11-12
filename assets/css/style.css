@@ -1,0 +1,313 @@
+/*
+Theme Name: Aytor
+Theme Version: 1.0.0
+Author Name:
+Author URI:
+Description:
+
+Table of Content
+==========================
+**Home Page
+    1) Header
+        1.1) Top Bar
+        1.2) Navigation
+    2) Hero Area
+    3) Featured Category
+*/
+
+/* =========== Common Css Start =========== */
+:root {
+    --primary-font: "Josefin Sans", sans-serif;
+    --secondary-font: "Roboto", sans-serif;
+
+    --text-color: #11161e;
+    --dark-hover-color: #151a32;
+    --light-color: #ffffff;
+    --primary-color-light: #ff6f61;
+    --primary-color-dark: #ff5645;
+    --paragraph-color: #444444;
+    --bg-color-dark: #f1f1f1;
+    --bg-color-light: #f1f3f4;
+    --dark-color: #000000;
+    --border-color:#8c8c8c;
+    --shadow-22: 0 3px 10px 0px rgba(var(--dark-color), 0.08);
+    --shadow-32: 0 0 50px 0px rgba(var(var(--dark-hover-color)), 0.1);
+    --shadow-42: 0 5px 30px 0px rgba(var(var(--text-color)), 0.08);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+li,
+p,
+span {
+    margin: 0;
+    padding: 0;
+}
+a,
+a:hover {
+    text-decoration: none;
+}
+ul,ol,li{
+    list-style-type: none;
+}
+body {
+    font-family: var(--primary-font);
+}
+p {
+    font-family: var(--secondary-font);
+}
+input:focus,
+.form-control:focus{
+    outline: 0;
+    box-shadow: none;
+}
+.text-justify {
+    text-align: justify;
+}
+/* =========== Common Css End =========== */
+
+/* =========== Top Bar Section Css Start =========== */
+#top_bar{
+    background-color: var(--dark-hover-color);
+    padding: 11px 0;
+    color: var(--light-color);
+}
+#top_bar .top_bar_left p i{
+    color: var(--primary-color-light);
+    margin-right: 4px;
+}
+#top_bar .top_bar_left p{
+    line-height: 26px;
+}
+#top_bar .top_bar_left p span{
+    color: var(--primary-color-light);
+    font-family: var(--primary-font);
+}
+
+#top_bar .top_bar_right ul:first-child li{
+    border-right: 1px solid var(--border-color);
+    padding: 0 20px;
+}
+
+#top_bar .top_bar_right .text1 li a{
+    color: var(--light-color);
+}
+#top_bar .top_bar_right .icons li a{
+    color: var(--light-color);
+    width: 20px;
+    height: 20px;
+    padding: 0px 10px;
+    margin-left: 5px;
+}
+#top_bar .top_bar_right {
+    transition: .9s;
+}
+#top_bar .top_bar_right .icons li:hover a,#top_bar .top_bar_right .text1 li:hover a{
+    color: var(--primary-color-light);
+}
+#top_bar ul li .drop_menu{
+    background-color: var(--dark-hover-color);
+    color: var(--light-color);
+    border: none;
+}
+
+/* =========== Top Bar Section Css End =========== */
+/* =========== Navigation Section Css Start =========== */
+#primary_nav{
+    background-color: var(--light-color);
+    color: var(--text-color);
+    font-family: var(--primary-font);
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.icon_section ul li a{
+    margin: 0px 20px;
+    color: var(--text-color);
+}
+.icon_section ul li button{
+    margin: 0px 5px;
+    color: var(--text-color);
+}
+.icon_section{
+    transition: .10s;
+}
+.icon_section li a:hover,.icon_section ul li button i:hover{
+   color: var(--primary-color-light);
+}
+.icon_section ul li button{
+    background: none;
+    border: none;
+    position: relative;
+}
+.icon_section ul li button span{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 10px;
+    left: 14px;
+    color: var(--light-color);
+    background-color: var(--primary-color-light);
+}
+/* =========== Navigation Section Css End =========== */
+
+/* =========== Footer Bar Section Css Start =========== */
+.footer{
+    padding: 90px 0;
+    color : var(--light-color);
+    background-color: var(--dark-hover-color);
+}
+.footer .row{
+    border-bottom: 1px solid var(--light-color);
+    padding: 50px 0;
+}
+.footer .line-1 ul li a{
+    border: 1px solid var(--dark-hover-color);
+    padding: 13px 15px;
+    background-color: var(--light-color);
+    color: var(--dark-hover-color);
+    transition: 0.4s;
+}
+.footer .line-1 ul li a:hover{
+    color: var(--light-color);
+    background-color: var(--primary-color-light);
+}
+.footer h4{
+    padding-bottom: 20px;
+    color: var(--light-color);
+    font-family: var(--primary-font);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 34px; 
+}
+.footer .line-3 ul{
+    display: flex;
+    flex-direction: column;
+}
+.footer .line-3 ul li i{
+    color: var(--primary-color-light);
+    border: none;
+    gap: 10px;   
+}
+
+
+.footer ul li{
+    color: var(--light-color);
+    font-family: var(--secondary-font);
+    font-weight: 400;
+    line-height: 28px; 
+}
+.footer .line-2 li a{
+    color: var(--light-color);
+    transition: 0.4s;
+
+}
+
+.footer .line-2 li a:hover{
+    color: var(--primary-color-light);
+}
+.footer .line-2 ul li i{
+    transition: 0.4s;
+}
+.footer .line-2 ul li i:hover{
+    color: var(--primary-color-light);
+}
+
+.footer .subscribe_button input{
+    border: none;
+    box-shadow: none;
+    padding-left: 10px;
+}
+.footer .subscribe_button a{
+    background-color: var(--primary-color-light);
+    font-size: 18px;;
+    font-weight: 600;
+    line-height: 30px;
+    color: var(--light-color);
+    width: 150px;
+    height: 50px;
+    display: block;
+    padding-top: 10px;
+    border: none;
+
+}
+
+
+footer{
+    padding: 20px 0;
+    height: 70px;
+    margin-top: -2px;
+    color: var(--light-color);
+    background-color: var(--paragraph-color);
+}
+footer .aytor{
+    color: var(--primary-color-light);
+}
+footer .Angfuzsoft{
+    color: var(--primary-color-light);
+}
+/* =========== Footer Bar Section Css END =========== */
+
+/* =========== Search Section Css Start =========== */
+#search{
+    position: fixed;
+    inset: 0;
+    background-color: var(--dark-color);
+    transform: scale(0);
+    transition: .5s;
+}
+#search.show{
+    transform: scale(1);
+}
+#search.hide{
+    transform: scale(0);
+}
+#search .search_form{
+    width: 50%;
+    border: 2px solid var(--primary-color-light);
+    border-radius: 50px;
+    padding: 15px 20px;
+}
+#search .search_form input{
+    width: 100%;
+    background:none;
+    border: none;
+    color: var(--light-color);
+}
+#search .search_form button{
+    background:none;
+    border: none;
+    color: var(--light-color)
+}
+#search #search_close_btn{
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    cursor: pointer;
+    transition: .5s;
+}
+#search #search_close_btn:hover{
+    transform: rotate(90deg);
+}
+#search #search_close_btn{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 20px;
+    color: var(--primary-color-light);
+    background-color: var(--dark-color);
+    border: 1px solid var(--primary-color-light);
+}
+#search #search_close_btn:hover{
+    color: var(--primary-color-light);
+    background-color: var(--light-color);
+
+}
+/* =========== Search Section Css End =========== */
+
